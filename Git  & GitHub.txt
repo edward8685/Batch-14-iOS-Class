@@ -1,0 +1,24 @@
+#Git & Github
+
+git status:
+To determine which files are in which state.
+
+git add:
+To track the new file.
+
+git commit:
+To record changes to the repository.
+
+git log
+Show the list of all the commits made to a repository.
+
+git push [ Repo_name ] [ Branch_name ]:
+To upload local repository content to a remote repository.
+
+git remote -v:
+Show the URLs that Git has stored for the shortname to be used when reading and writing to that remote3
+git branch:
+List, create, or delete branches.
+
+fork:
+To fork a project means to contribute to an existing project.
