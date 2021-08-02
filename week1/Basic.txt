@@ -1,0 +1,53 @@
+#Basic
+
+1.
+let Pi=3.1415
+//Pi is inferred to be of type Double
+
+2.
+let x: Int = 3
+let y: Int = 9
+let average: Int = (x + y) / 2
+
+3.
+let x: double = 3
+let y: double = 9
+let average: double = (x + y) / 2
+
+10/3=3 //type Int
+10.0/3.0=3.0 //type Double
+
+4.
+var flag:Bool = true
+var inputString: String = "Hello world."
+let bitsInbite: Int = 8
+let acerageScore: Double = 86.8
+
+5.
+var salary = 22000
+salary += 28000
+
+6.
+==
+\\ '=' means assign , '==' means  eaulity
+
+7.
+let x = 10
+let y = 3
+let remainder = x % y
+
+8.
+'var' defines an ordinary variable which can be mutated and 'let' defines a const. 
+'var' is function scoped and 'let' is block scoped.
+9.
+  a.Use camel case
+  b.Name methods for their side effects
+  c.Generally avoiding abbreviations Using precedent for names
+  d.name funion by effect
+
+10.
+The compiler can figure out the type without we specify.
+ex. let a = 10  => let a : Int = 10
+
+11
+phoneNumber is declared to Int,then can not assign to String.

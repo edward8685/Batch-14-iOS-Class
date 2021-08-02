@@ -1,0 +1,22 @@
+#Function
+
+1.
+let name = "Luke"
+func greet(person:String) {
+  print("Hello,\(person)")
+}
+greet(person:name)
+
+2.
+func multiply(a:Int , b :Int = 10){
+  print(a*b)
+}
+3.
+The argument label is used when calling the function
+The parameter name is used in the implementation of the function.
+
+4.
+->String means return the String(depends on the function statement)
+->Double means return the Double(depends on the function statement)
+
+

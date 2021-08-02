@@ -1,0 +1,32 @@
+#Git & Github
+
+2.explain the meanings of GitHub commands
+To determine which files are in which state.
+
+git add:
+To track the new file.
+
+git commit:
+To record changes to the repository.
+
+git log
+Show the list of all the commits made to a repository.
+
+git push [ Repo_name ] [ Branch_name ]:
+To upload local repository content to a remote repository.
+
+git remote -v:
+Show the URLs that Git has stored for the shortname to be used when reading and writing to that remote3
+git branch:
+List, create, or delete branches.
+
+fork:
+To fork a project means to contribute to an existing project.
+
+3.Describe how to establish a GitHub repo and how to upload the local projects
+to GitHub.
+First create a repo on Github then get the remote folder link. 
+Change directory in terminal to the working file and initialize the local directory by using 'git init'.
+Use'git add' to add the files to the staging area and use 'git commit' to the local repo.
+Use 'git remote add origin + URL" to connect the remote repo and use 'git push origin master' to push branch to Github.
+
