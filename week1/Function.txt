@@ -1,11 +1,10 @@
 #Function
 
 1.
-let name = "Luke"
+//fixed
 func greet(person:String) {
   print("Hello,\(person)")
 }
-greet(person:name)
 
 2.
 func multiply(a:Int , b :Int = 10){

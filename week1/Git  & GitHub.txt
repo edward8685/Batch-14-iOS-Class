@@ -1,6 +1,8 @@
 #Git & Github
 
 2.explain the meanings of GitHub commands
+
+git status: //fixed
 To determine which files are in which state.
 
 git add:
@@ -17,6 +19,7 @@ To upload local repository content to a remote repository.
 
 git remote -v:
 Show the URLs that Git has stored for the shortname to be used when reading and writing to that remote3
+
 git branch:
 List, create, or delete branches.
 

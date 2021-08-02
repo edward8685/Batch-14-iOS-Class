@@ -15,7 +15,7 @@ let y: double = 9
 let average: double = (x + y) / 2
 
 10/3=3 //type Int
-10.0/3.0=3.0 //type Double
+10.0/3.0=3.33333 //type Double *fixed
 
 4.
 var flag:Bool = true

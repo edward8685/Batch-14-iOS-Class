@@ -10,7 +10,7 @@ myFriends += ["Ian","Bomi","Kevin"]
 myFriends.append("Michael")
 
 4.
-myFriends.swapAt(0,3)
+myFriends.swapAt(0,2) \\fixed
 
 5.
 for i in myFriends{
