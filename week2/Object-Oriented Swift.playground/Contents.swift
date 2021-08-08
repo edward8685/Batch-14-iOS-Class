@@ -59,13 +59,12 @@ print(zoo.weeklyHot.animal)
 
 /*4.What’s the difference between Struct and Class ?
  Struct :
- Struct are value type.
- If properties changed inside a method, using the mutating fucn.
-
+    Struct are value type.
+    If properties changed inside a method, using the    mutating fucn.
  Class :
- Class are reference type which lives on the heap.
- Class con inherit superclass.
- Class can be deinitialized.
+    Class are reference type which lives on the heap.
+    Class con inherit superclass.
+    Class can be deinitialized.
  */
 
 /*5.What’s the difference between instance method and type method?
@@ -90,6 +89,3 @@ print(zoo.weeklyHot.animal)
  Coping reference type will create a shared instace that mutiple variables refer to a single instance.
 
  */
-
-
-
