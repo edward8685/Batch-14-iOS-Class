@@ -9,16 +9,16 @@ enum Gasoline : String {
     
     case diesel = "Diesel"
     
-    func getPrice(){
+    func getPrice() -> String {     //return String
         switch self{
         case .oil92:
-            print("oil92 is 28.7 NT$/L")
+            return ("oil92 is 28.7 NT$/L")  // print -> return
         case .oil95:
-            print("oil95 is 30.2 NT$/L")
+            return ("oil95 is 30.2 NT$/L")
         case .oil98:
-            print("oil98 is 32.2 NT$/L")
+            return ("oil98 is 32.2 NT$/L")
         case .diesel:
-            print("Diesel is 28.7 NT$/L")
+            return ("Diesel is 28.7 NT$/L")
         }
     }
 }
@@ -35,8 +35,10 @@ Gasoline.oil92.rawValue
 //2.
 
 class People {
+    var name : String
     var pet : Pet? // have pet or nil
-    init (pet : Pet? ){
+    init (name: String , pet : Pet? ) {
+        self.name = name
         self.pet = pet
     }
 }
@@ -46,15 +48,16 @@ class Pet {
         self.name = name
     }
 }
-//
-//func havePet(pet : Pet?){
-//    guard let pet = People.pet else{
-//    }
-//}
-//
-//func havePet(pet : Pet?){
-//    if let pet = People.pet else{
-//    }
-//}
+func havePet1(people: People) {
+    guard let _ = people.pet else { return }
+    print("have pet!")  // check
+}
 
+func havePet2(people: People) {
+    if let _ = people.pet  { print("have pet!") } // check
+}
 
+let dog = Pet (name: "dog")
+let jack = People(name: "jack", pet: dog)
+havePet1(people: jack)
+havePet2(people: jack)

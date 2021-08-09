@@ -1,9 +1,11 @@
 //Object-Oriented Swift
 //1.
 class Animal{
-    let animal : String
-    init(animal:String){
+    var animal : String
+    var gender : String     //add propoty gender
+    init(animal:String , gender : String){
         self.animal = animal
+        self.gender = gender
     }
     enum Gender {
         case male
@@ -21,7 +23,7 @@ Animal.eat()
 //2.
 class Elephant : Animal{
     init(){
-        super.init(animal: "elephant")
+        super.init(animal: "elephant", gender: "male")
     }
     override class func eat(){
         print("I eat bananas!")
@@ -30,7 +32,7 @@ class Elephant : Animal{
 
 class Tiger : Animal{
     init(){
-        super.init(animal: "tiger")
+        super.init(animal: "tiger", gender: "male")
     }
     override class func eat(){
         print("I eat elephants!")
@@ -39,7 +41,7 @@ class Tiger : Animal{
 
 class Horse : Animal{
     init(){
-        super.init(animal : "horse")
+        super.init(animal : "horse", gender: "male")
     }
     override class func eat(){
         print("I eat grass!")
@@ -56,7 +58,6 @@ class Zoo{
 }
 let zoo = Zoo(weeklyHot: Tiger())
 print(zoo.weeklyHot.animal)
-
 /*4.What’s the difference between Struct and Class ?
  Struct :
     Struct are value type.
@@ -80,12 +81,13 @@ print(zoo.weeklyHot.animal)
 
 /*
  7.What does self mean in an instance method and a type method ?
- "self" is a reference to the current object.It’s a variable or object within the class (or struct)
- */
-
+ "self" used in instance method that refers to itself. It’s used to access instance within methods.
+ self refers to a type  when used in a type method
+ 
+ 
+*/
 /*
  8.What’s the difference between reference type and value type ?
  When coping value type variations,it creats an independant instance with it's copy.
  Coping reference type will create a shared instace that mutiple variables refer to a single instance.
-
  */

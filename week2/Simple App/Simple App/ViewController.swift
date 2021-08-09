@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var funFackText: UITextView!
     
-    let button = UIButton()
-    
     let text = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus.",
     "Contrary to popular belief, Lorem Ipsum is not simply random text.",
@@ -34,7 +32,7 @@ class ViewController: UIViewController {
     
         view.backgroundColor = color.randomElement()
         funFackText.text = text.randomElement()!
-        button.setTitleColor(color.randomElement(), for: .normal)
+        sender.setTitleColor(view.backgroundColor, for: .normal) //fixed
     }
 }
 
