@@ -2,8 +2,8 @@
 //1.
 class Animal{
     var animal : String
-    var gender : String     //add propoty gender
-    init(animal:String , gender : String){
+    var gender : Gender    //add propoty gender (data type : Gender)
+    init(animal:String , gender : Gender){
         self.animal = animal
         self.gender = gender
     }
@@ -19,11 +19,10 @@ class Animal{
     }
 }
 Animal.eat()
-
 //2.
 class Elephant : Animal{
     init(){
-        super.init(animal: "elephant", gender: "male")
+        super.init(animal: "elephant", gender: .male)
     }
     override class func eat(){
         print("I eat bananas!")
@@ -32,7 +31,7 @@ class Elephant : Animal{
 
 class Tiger : Animal{
     init(){
-        super.init(animal: "tiger", gender: "male")
+        super.init(animal: "tiger", gender: .male)
     }
     override class func eat(){
         print("I eat elephants!")
@@ -41,14 +40,13 @@ class Tiger : Animal{
 
 class Horse : Animal{
     init(){
-        super.init(animal : "horse", gender: "male")
+        super.init(animal : "horse", gender: .male)
     }
     override class func eat(){
         print("I eat grass!")
     }
 }
 Horse.eat()
-
 //3.
 class Zoo{
     var weeklyHot : Animal
