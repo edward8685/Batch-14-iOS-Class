@@ -5,7 +5,7 @@ enum Gasoline : String {
     
     case oil95 = "95"
     
-    case oil98 = "98"z
+    case oil98 = "98"
     
     case diesel = "Diesel"
     
